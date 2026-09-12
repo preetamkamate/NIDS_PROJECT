@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIDS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <div class="card shadow p-4">
+
+        <h2 class="text-center mb-4">
+            AI-Powered Network Intrusion Detection System
+        </h2>
+
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Upload CSV File
+                </label>
+
+                <input
+                    type="file"
+                    class="form-control"
+                    name="file"
+                    accept=".csv"
+                    required>
+
+            </div>
+
+            <button class="btn btn-primary w-100">
+                Predict
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
